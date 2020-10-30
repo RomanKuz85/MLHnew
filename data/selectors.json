@@ -3,5 +3,12 @@
   "name": "#name",
   "gender": ".ant-radio-input",
   "age": "#age",
-  "story": "#story"
+  "story": "#story",
+  "header": "h3",
+  "description": "p",
+  "image": "//label[text() = '5. Upload an image (optional)']",
+  "submitButton": ".ant-btn",
+  "radioButton1": "//span[text() = 'he']",
+  "radioButton2": "//span[text() = 'she']",
+  "radioButton3": "//span[text() = 'it']"
 }

@@ -1,3 +1,4 @@
+/*
 const sel = require('../../data/selectors.json');
 const exp = require('../../data/expected.json');
 
@@ -63,3 +64,5 @@ describe('My Little Hero', function () { //define suite title by passing a strin
     });
 
 });
+
+ */
