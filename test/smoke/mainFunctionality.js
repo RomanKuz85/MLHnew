@@ -11,7 +11,7 @@ describe('Checking the name functionality', function () {
         it('TC-021 Create button is clickable after 1-4 are filled in', function () {
             browser.url('');
             inputValues4(data.name, data.gender.she, data.age, data.storyType);
-            const create = $(sel.submitButton).isEnabled();
+            const create = $(sel.submitButtonR).isEnabled();
             browser.pause(3000);
             expect(create).toEqual(true);
         });
@@ -24,7 +24,7 @@ describe('Checking the name functionality', function () {
             it('TC-022 Gender he is working', function () {
                 browser.url('');
                 inputValues4AndClick(data.name, data.gender.he, data.age, data.storyType);
-                const but = $(sel.tryAgain).isDisplayed();
+                const but = $(sel.tryAgainR).isDisplayed();
                 browser.pause(3000);
                 expect(but).toEqual(true);
             });
@@ -32,8 +32,8 @@ describe('Checking the name functionality', function () {
             it('TC-023 Gender it is working', function () {
                 browser.url('');
                 inputValues4(data.name, data.gender.it, data.age, data.storyType);
-                $(sel.submitButton).click();
-                const but = $(sel.tryAgain).isDisplayed();
+                $(sel.submitButtonR).click();
+                const but = $(sel.tryAgainR).isDisplayed();
                 browser.pause(3000);
                 expect(but).toEqual(true);
             });

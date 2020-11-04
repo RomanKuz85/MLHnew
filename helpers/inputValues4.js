@@ -1,11 +1,11 @@
 const sel = require ('../data/selectors.json')
 
 function inputValues4 (name, gender, age, storyType){
-    $(sel.name).setValue(name);
-    $$(sel.gender)[gender].click();
-    $(sel.age).setValue(age);
-    $(sel.storyClick).click();
-    $$(sel.storyType)[storyType].click();
+    $(sel.nameR).setValue(name);
+    $$(sel.genderR)[gender].click();
+    $(sel.ageR).setValue(age);
+    $(sel.storyClickR).click();
+    $$(sel.storyTypeR)[storyType].click();
 }
 
 module.exports = inputValues4;
