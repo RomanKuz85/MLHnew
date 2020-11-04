@@ -29,5 +29,14 @@ describe('Checking the name functionality', function () {
                 expect(but).toEqual(true);
             });
 
+            it('TC-023 Gender it is working', function () {
+                browser.url('');
+                inputValues4(data.name, data.gender.it, data.age, data.storyType);
+                $(sel.submitButton).click();
+                const but = $(sel.tryAgain).isDisplayed();
+                browser.pause(3000);
+                expect(but).toEqual(true);
+            });
+
         });
 })
