@@ -39,4 +39,5 @@ describe('Checking the name functionality', function () {
             });
 
         });
-})
+
+});

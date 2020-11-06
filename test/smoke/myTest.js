@@ -1,6 +1,6 @@
-/*
 const sel = require('../../data/selectors.json');
 const exp = require('../../data/expected.json');
+const data = require('../../data/testData.json');
 
 
 describe('My Little Hero', function () {
@@ -15,6 +15,7 @@ describe('My Little Hero', function () {
         });
 
     });
+    /*
 
     describe('Elements exist', function () {
 
@@ -28,7 +29,7 @@ describe('My Little Hero', function () {
             expect(description).toEqual(true);
         });
 
-        it('TC-0024 Label for name', function () {
+        it('TC-004 Label for name', function () {
             const label = $$(sel.labelR)[0].isDisplayed();
             expect(label).toEqual(true);
         });
@@ -60,10 +61,13 @@ describe('My Little Hero', function () {
 
 
     });
+*/
 
     describe('Elements are correct', function () {
 
-        it('TC-010 Label for header = My Little Hero', function () {
+  /*
+
+       it('TC-010 Label for header = My Little Hero', function () {
             const header = $(sel.headerR).getText();
             expect(header).toEqual(exp.labelHeader);
         });
@@ -83,6 +87,14 @@ describe('My Little Hero', function () {
             expect(text).toEqual(exp.NameInputField);
         });
 
+ */
+        it('TC-014 User can input English letters', function () {
+            const text = $(sel.nameR).setValue(data.name);
+            const value = $(sel.nameR).getValue();
+            expect(value).toEqual(data.name);
+        });
+
+/*
         it('TC-022 Label for gender = 2. Please choose a gender.', function () {
             const text = $$(sel.labelR)[1].getAttribute('title');
             expect(text).toEqual(exp.labelGender);
@@ -112,9 +124,8 @@ describe('My Little Hero', function () {
             const text = $$(sel.labelR)[3].getAttribute('title');
             expect(text).toEqual(exp.labelStory);
         });
-
+*/
     });
 
 });
 
-*/
