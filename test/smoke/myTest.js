@@ -94,6 +94,12 @@ describe('My Little Hero', function () {
             expect(value).toEqual(data.name);
         });
 
+        it('TC-014 User can input English letters', function () {
+            const text = $(sel.nameR).setValue(data.name);
+            const value = $(sel.nameR).getValue();
+            expect(value).toEqual(data.name);
+        });
+
 /*
         it('TC-022 Label for gender = 2. Please choose a gender.', function () {
             const text = $$(sel.labelR)[1].getAttribute('title');
