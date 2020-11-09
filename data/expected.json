@@ -8,5 +8,6 @@
   "NameInputField": "Hero's name",
   "radioButton1": "he",
   "radioButton2": "she",
-  "radioButton3": "it"
+  "radioButton3": "it",
+  "checkAge": ["123", "two", "three", "four"]
 }
