@@ -17,7 +17,7 @@ describe('Checking the name functionality', function () {
         });
 
     });
-
+/*
         describe('Other path', function () {
 
 
@@ -40,4 +40,6 @@ describe('Checking the name functionality', function () {
 
         });
 
+
+ */
 });

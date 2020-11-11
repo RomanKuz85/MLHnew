@@ -1,3 +1,4 @@
+/*
 const sel = require('../../data/selectors.json');
 const exp = require('../../data/expected.json');
 const data = require('../../data/testData.json');
@@ -15,7 +16,7 @@ describe('My Little Hero', function () {
         });
 
     });
-    /*
+
 
     describe('Elements exist', function () {
 
@@ -61,11 +62,11 @@ describe('My Little Hero', function () {
 
 
     });
-*/
+
 
     describe('Elements are correct', function () {
 
-  /*
+
 
        it('TC-010 Label for header = My Little Hero', function () {
             const header = $(sel.headerR).getText();
@@ -87,20 +88,63 @@ describe('My Little Hero', function () {
             expect(text).toEqual(exp.NameInputField);
         });
 
- */
+
         it('TC-014 User can input English letters', function () {
             const text = $(sel.nameR).setValue(data.name);
             const value = $(sel.nameR).getValue();
             expect(value).toEqual(data.name);
         });
 
-        it('TC-014/1 User can input English letters', function () {
-            const text = $(sel.nameR).setValue(data.name);
+        it('TC-015 User can input digits', function () {
+            browser.url('');
+            const text = $(sel.nameR).setValue(data.digit);
             const value = $(sel.nameR).getValue();
-            expect(value).toEqual(data.name);
+            expect(value).toEqual(data.digit);
         });
 
-/*
+        it('TC-016 User can input special characteristics', function () {
+            browser.url('');
+            const text = $(sel.nameR).setValue(data.specialCharact);
+            const value = $(sel.nameR).getValue();
+            expect(value).toEqual(data.specialCharact);
+        });
+
+        it('TC-017 User can input one letter', function () {
+            browser.url('');
+            const text = $(sel.nameR).setValue(data.oneLetter);
+            const value = $(sel.nameR).getValue();
+            expect(value).toEqual(data.oneLetter);
+        });
+
+        it('TC-018 User can input 70 symbols - letters and digits', function () {
+            browser.url('');
+            const text = $(sel.nameR).setValue(data["70Symbols"]);
+            const value = $(sel.nameR).getValue();
+            expect(value).toEqual(data["70Symbols"]);
+        });
+
+        it('TC-019 User cannot input Russian letters', function () {
+            browser.url('');
+            const text = $(sel.nameR).setValue(data.russianLetters);
+            const value = $(sel.nameR).getValue();
+            expect(value).toEqual(!data.russianLetters);
+        });
+
+        it('TC-019 User cannot input 71 symbols', function () {
+            browser.url('');
+            const text = $(sel.nameR).setValue(data["71Symbols"]);
+            const error = $(sel["71Symbols"]).isExisting();
+            expect(error).toEqual(true);
+        });
+
+        it('TC-019 User cannot input 74 symbols by using copy+paste', function () {
+            browser.url('');
+            const text = $(sel.nameR).setValue(data["74CopyPaste"], ["Command","v"]);
+            const error = $(sel["71Symbols"]).isExisting();
+            expect(error).toEqual(true);
+        });
+
+
         it('TC-022 Label for gender = 2. Please choose a gender.', function () {
             const text = $$(sel.labelR)[1].getAttribute('title');
             expect(text).toEqual(exp.labelGender);
@@ -130,8 +174,10 @@ describe('My Little Hero', function () {
             const text = $$(sel.labelR)[3].getAttribute('title');
             expect(text).toEqual(exp.labelStory);
         });
-*/
+
     });
 
 });
+
+ */
 

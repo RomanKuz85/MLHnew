@@ -20,6 +20,7 @@ describe('Checking the naditional functionality', function () {
                 expect(textAge).toEqual(exp.checkAge[i]);
                 $(sel.tryAgainR).click();
 
+
             }
 
         });

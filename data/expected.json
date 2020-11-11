@@ -9,5 +9,7 @@
   "radioButton1": "he",
   "radioButton2": "she",
   "radioButton3": "it",
-  "checkAge": ["123", "two", "three", "four"]
+  "checkAge": ["123", "two", "three", "four"],
+  "genderChoice": "ant-radio-wrapper ant-radio-wrapper-checked",
+  "genderNotChoice": "ant-radio-wrapper"
 }

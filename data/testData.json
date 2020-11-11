@@ -7,5 +7,12 @@
   },
   "age": 123,
   "storyType": 6,
-  "checkAge": [123, 2, 3, 4]
+  "checkAge": [123, 2, 3, 4],
+  "digit": "0123456789",
+  "specialCharact": "-+-/*,.?#$%@&{}()[]\"`~|\\ <>:;",
+  "oneLetter": "letter A",
+  "70Symbols": "hero0123456789 -+-/*,.?#$%@&{}()[]\"`~|\\ <>:;AbCdEfGhIgKlMnOpQrStUvWxYz",
+  "russianLetters": "Герой",
+  "71Symbols": "hero0123456789 -+-/*,.?#$%@&{}()[]\"`~|\\ <>:;AbCdEfGhIgKlMnOpQrStUvWxYz1",
+  "74CopyPaste": "Hero00123456789 -+-/*,.?#$%@&{}()[]\"`~|\\ <>:;Hero0123456789-+-/*,.?#$%@&{+++"
 }
