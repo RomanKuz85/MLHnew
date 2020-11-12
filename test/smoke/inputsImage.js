@@ -13,5 +13,12 @@ describe('Inputs for Image input field negative tests', function () {
         expect(error).toEqual(true);
     })
 
+    it('A-060-3 Can not upload .pdf file', function () {
+        browser.url('');
+        uploadImageBrowser(data.imageChoice.testXLSX);
+        const error = $(sel.imageError).isExisting();
+        expect(error).toEqual(true);
+    })
+
 })
 
