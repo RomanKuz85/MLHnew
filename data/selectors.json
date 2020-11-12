@@ -17,5 +17,7 @@
  "71Symbols": ".ant-form-item-explain",
  "selectGender": ".ant-radio-input",
  "genderChoiceSel": ".ant-radio-wrapper",
- "tryAgainClicable": ".btn-primary"
+ "tryAgainClicable": ".btn-primary",
+ "imageUploadK": ".ant-upload input",
+ "imageError": ".ant-message-error"
 }
